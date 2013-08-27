@@ -29,6 +29,11 @@
     if ([self.callbackObject respondsToSelector:func])
     {
         [self.callbackObject performSelector:func];
+        //如果需要带参数，那么可以使用
+        /*
+        [self.callbackObject performSelector:func withObject:myargument];
+        [self.callbackObject performSelector:func withObject:myargument1 withObject:myargument2];
+         */
     }
     else
     {
